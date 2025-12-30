@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stranger Things Experience</title>
+
+  <!-- Fonte externa (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container header__content">
+      <div class="logo">
+        <span class="logo__accent">Stranger</span> Things Experience
+      </div>
+
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link active">Início</a></li>
+          <li><a href="#atracoes" class="nav__link">Atrações</a></li>
+          <li><a href="#planos" class="nav__link">Planos</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="#planos" class="btn btn--primary header__cta">Garantir ingresso</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Entre no <span>Mundo Invertido</span>
+          </h1>
+          <p class="hero__subtitle">
+            Uma experiência imersiva inspirada em Stranger Things, com
+            cenários, luzes e mistérios direto de Hawkins.
+          </p>
+          <div class="hero__actions">
+            <a href="#planos" class="btn btn--primary">Comprar agora</a>
+            <a href="#atracoes" class="btn btn--outline">Ver atrações</a>
+          </div>
+          <ul class="hero__highlights">
+            <li>❖ Experiência 100% imersiva</li>
+            <li>❖ Atrações temáticas e interativas</li>
+            <li>❖ Áudio e trilha inspirados nos anos 80</li>
+          </ul>
+        </div>
+
+        <div class="hero__image">
+          <img
+            src="img/hero-poster.jpg"
+            alt="Arte com grupo de jovens em cenário sobrenatural dos anos 80"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO ATRAÇÕES -->
+    <section id="atracoes" class="section section--dark">
+      <div class="container">
+        <header class="section__header">
+          <h2>Atrações principais</h2>
+          <p>
+            Explore Hawkins, o Laboratório e o Mundo Invertido com
+            experiências pensadas para fãs da série.
+          </p>
+        </header>
+
+        <div class="tabs">
+          <button class="tabs__button tabs__button--active" data-tab="lab">
+            Laboratório de Hawkins
+          </button>
+          <button class="tabs__button" data-tab="upside">
+            Mundo Invertido
+          </button>
+          <button class="tabs__button" data-tab="arcade">
+            Hawkins Arcade
+          </button>
+          <button class="tabs__button" data-tab="lights">
+            Sala das Luzes
+          </button>
+        </div>
+
+        <div class="tabs__content">
+          <!-- LAB -->
+          <article class="tab tab--active" id="tab-lab">
+            <div class="tab__image">
+              <img
+                src="img/atracao-lab.jpg"
+                alt="Corredor de laboratório sombrio com luzes frias"
+              />
+            </div>
+            <div class="tab__text">
+              <h3>Laboratório de Hawkins</h3>
+              <p>
+                Caminhe pelos corredores do laboratório e descubra
+                segredos sombrios por trás dos experimentos realizados
+                com crianças especiais.
+              </p>
+              <ul>
+                <li>Cenários inspirados em laboratório secreto</li>
+                <li>Efeitos de luz e som imersivos</li>
+                <li>Interações com atores caracterizados</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- UPSIDE DOWN -->
+          <article class="tab" id="tab-upside">
+            <div class="tab__image">
+              <img
+                src="img/atracao-upside.jpg"
+                alt="Floresta escura com névoa e clima sobrenatural"
+              />
+            </div>
+            <div class="tab__text">
+              <h3>Mundo Invertido</h3>
+              <p>
+                Atravesse o portal e sinta a atmosfera opressora do
+                Mundo Invertido, com névoa, sombras e muita tensão.
+              </p>
+              <ul>
+                <li>Ambiente escuro com efeitos especiais</li>
+                <li>Fotografias em pontos instagramáveis</li>
+                <li>Trilha sonora intensa</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- ARCADE -->
+          <article class="tab" id="tab-arcade">
+            <div class="tab__image">
+              <img
+                src="img/atracao-arcade.jpg"
+                alt="Arcade anos 80 com máquinas de fliperama e luz neon"
+              />
+            </div>
+            <div class="tab__text">
+              <h3>Hawkins Arcade</h3>
+              <p>
+                Reviva os anos 80 jogando em máquinas de fliperama,
+                competindo com amigos e colecionando prêmios exclusivos.
+              </p>
+              <ul>
+                <li>Jogos clássicos dos anos 80</li>
+                <li>Ranking de pontuações</li>
+                <li>Área de descanso temática</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- LIGHTS -->
+          <article class="tab" id="tab-lights">
+            <div class="tab__image">
+              <img
+                src="img/atracao-lights.jpg"
+                alt="Parede com luzes coloridas e letras pintadas"
+              />
+            </div>
+            <div class="tab__text">
+              <h3>Sala das Luzes</h3>
+              <p>
+                Inspire-se em uma icônica parede de luzes para se
+                comunicar com o desconhecido e decifrar mensagens
+                misteriosas.
+              </p>
+              <ul>
+                <li>Painel interativo de luzes</li>
+                <li>Mensagens escondidas para os fãs</li>
+                <li>Atividade especial em grupo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE (imagem + texto) -->
+    <section class="section">
+      <div class="container about">
+        <div class="about__image">
+          <img
+            src="img/about-group.jpg"
+            alt="Grupo de amigos em evento com luzes vermelhas e azuis"
+          />
+        </div>
+        <div class="about__text">
+          <h2>Uma experiência feita para fãs</h2>
+          <p>
+            A Stranger Things Experience foi criada para transportar você
+            diretamente para Hawkins. Cada detalhe, do som à iluminação,
+            foi pensado para recriar o clima da série.
+          </p>
+          <p>
+            Traga seus amigos, vista sua melhor roupa anos 80 e prepare-se
+            para viver uma noite inesquecível.
+          </p>
+          <ul class="about__list">
+            <li>Equipe treinada para receber fãs de todas as idades</li>
+            <li>Acessibilidade em áreas selecionadas</li>
+            <li>Loja com produtos temáticos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO BENEFÍCIOS (imagem + lista reestruturada) -->
+    <section class="section section--accent">
+      <div class="container benefits">
+        <div class="benefits__text">
+          <h2>Por que participar?</h2>
+          <ul class="benefits__list">
+            <li>
+              <h3>Imersão total</h3>
+              <p>
+                Cenários realistas, efeitos especiais e trilha inspirada
+                em histórias sobrenaturais dos anos 80.
+              </p>
+            </li>
+            <li>
+              <h3>Para todas as idades</h3>
+              <p>
+                Atividades pensadas para fãs novos e antigos, com níveis
+                diferentes de intensidade.
+              </p>
+            </li>
+            <li>
+              <h3>Momentos inesquecíveis</h3>
+              <p>
+                Fotografe, grave e compartilhe cada momento dessa
+                experiência única.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="benefits__image">
+          <img
+            src="img/benefits-lights.jpg"
+            alt="Amigos tirando foto em ambiente com luzes neon vermelhas e azuis"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO PLANOS -->
+    <section id="planos" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Escolha seu plano</h2>
+          <p>
+            Garanta seu ingresso para a Stranger Things Experience com o
+            plano que mais combina com você.
+          </p>
+        </header>
+
+        <div class="plans">
+          <article class="plan" data-plan="basic">
+            <h3>Plano Hawkins</h3>
+            <p class="plan__price">R$ 89,90</p>
+            <ul class="plan__features">
+              <li>Acesso à experiência completa</li>
+              <li>Entrada em horário agendado</li>
+              <li>Fotos em áreas comuns</li>
+            </ul>
+            <button class="btn btn--outline plan__select">Selecionar</button>
+          </article>
+
+          <article class="plan plan--highlight" data-plan="vip">
+            <div class="plan__badge">Mais popular</div>
+            <h3>Plano Mundo Invertido</h3>
+            <p class="plan__price">R$ 149,90</p>
+            <ul class="plan__features">
+              <li>Tudo do Plano Hawkins</li>
+              <li>Acesso priorizado</li>
+              <li>Foto oficial impressa</li>
+              <li>Brinde exclusivo</li>
+            </ul>
+            <button class="btn btn--primary plan__select">Selecionar</button>
+          </article>
+
+          <article class="plan" data-plan="ultimate">
+            <h3>Plano Eleven</h3>
+            <p class="plan__price">R$ 239,90</p>
+            <ul class="plan__features">
+              <li>Tudo do Plano Mundo Invertido</li>
+              <li>Tour guiado pelos bastidores</li>
+              <li>Acesso à área VIP</li>
+              <li>Kit colecionável premium</li>
+            </ul>
+            <button class="btn btn--outline plan__select">Selecionar</button>
+          </article>
+        </div>
+
+        <p class="plans__hint">
+          Clique em um plano para destacá-lo. O plano selecionado ficará em
+          evidência.
+        </p>
+      </div>
+    </section>
+
+    <!-- SEÇÃO FAQ -->
+    <section id="faq" class="section section--dark">
+      <div class="container">
+        <header class="section__header">
+          <h2>Perguntas frequentes</h2>
+          <p>
+            Tire suas dúvidas antes de viajar para Hawkins.
+          </p>
+        </header>
+
+        <div class="faq">
+          <!-- Item 1 -->
+          <article class="faq__item">
+            <button class="faq__question">
+              <span>Qual a duração da experiência?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                A experiência completa dura em média de 1h30 a 2h,
+                dependendo do fluxo de pessoas e do tempo que você passa
+                em cada atração.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="faq__item">
+            <button class="faq__question">
+              <span>A experiência é assustadora?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Algumas áreas possuem iluminação baixa, sons intensos e
+                efeitos que podem assustar crianças pequenas. Recomendamos
+                classificação indicativa de 12 anos, mas menores podem
+                participar acompanhados dos responsáveis.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="faq__item">
+            <button class="faq__question">
+              <span>Posso tirar fotos e gravar vídeos?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Sim! Fotos e vídeos são liberados na maior parte da
+                experiência, exceto em áreas sinalizadas. Fique atento às
+                orientações da equipe.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="faq__item">
+            <button class="faq__question">
+              <span>Há estacionamento no local?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Sim, temos estacionamento conveniado ao lado da entrada
+                principal, com vagas limitadas e cobrança à parte.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="section">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2>Entre em contato</h2>
+          <p>
+            Ficou com alguma dúvida ou quer falar com a nossa equipe?
+            Preencha o formulário e retornaremos o mais breve possível.
+          </p>
+          <ul>
+            <li><strong>E-mail:</strong> contato@ebac.com</li>
+            <li><strong>Local:</strong> São Paulo - SP</li>
+          </ul>
+        </div>
+
+        <form class="contact__form">
+          <div class="form__group">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" required placeholder="Seu nome completo" />
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" required placeholder="seuemail@exemplo.com" />
+          </div>
+          <div class="form__group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="4" required placeholder="Como podemos te ajudar?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+          <p class="form__feedback" id="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__brand">
+        <div class="logo">
+          <span class="logo__accent">Stranger</span> Things Experience
+        </div>
+        <p>
+          Fanpage não oficial, criada para fins de estudo e inspiração para
+          fãs de Stranger Things.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#atracoes">Atrações</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__social">
+        <h4>Redes sociais</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Stranger Things Experience — Exercício módulo 21.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</body>
+</html>
